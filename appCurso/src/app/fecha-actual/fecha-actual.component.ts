@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class FechaActualComponent {
 
     hoy: any = new Date();
+    constructor(){
+        setInterval(()=>{
+            this.hoy = new Date();
+        },1000)
+    }
 }
