@@ -8,6 +8,7 @@ import { CopyrightComponent } from './copyright/copyright.component';
 import { EjmInterpolacionComponent } from './ejm-interpolacion/ejm-interpolacion.component';
 import { EjeventbindingComponent } from './ejeventbinding/ejeventbinding.component';
 import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component';
+import { EjDirectivangIfComponent } from './ej-directivang-if/ej-directivang-if.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component'
     CopyrightComponent,
     EjmInterpolacionComponent,
     EjeventbindingComponent,
-    Ej2waybindingComponent
+    Ej2waybindingComponent,
+    EjDirectivangIfComponent
   ],
   imports: [
     BrowserModule,
