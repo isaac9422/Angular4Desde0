@@ -1,3 +1,21 @@
-<p>
-  ej-directivang-if works!
-</p>
+    <label>Nombre y Apellido</label>
+    <input type="text" class="form-control" [(ngModel)]="nombre" placeholder="Complete su nombre">
+    <br>
+    <button type="submit" class="btn btn-primary" *ngIf="nombre; else elseBlock">Enviar</button>
+    
+    <ng-template #elseBlock>
+    <button type="submit" class="btn btn-danger" disabled>Enviar</button>
+    </ng-template>
+<br>
+    <h3>¿Cuál es la capital del Colombia?</h3>
+    <input type="text" class="form-control" [(ngModel)]="capital">
+    <p *ngif="!capital; else correcto">Complete la pregunta</p>
+    <ng-template #correcto>
+    <h4 *ngIf="setResultado(); else incorrecto">
+        !Correcto!
+        </h4>
+    </ng-template>
+    <ng-template #incorrecto>
+<h4>Lo siente, inténtelo de nuevo</h4>
+    </ng-template>
+    

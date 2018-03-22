@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ej-directivang-if.component.css']
 })
 export class EjDirectivangIfComponent implements OnInit {
-
+    nombre:String;
+    capital:String;
   constructor() { }
 
   ngOnInit() {
   }
+    setResultado(){
+        return this.capital === "Botota" ? true : false;
+}
 
 }
