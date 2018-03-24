@@ -1,0 +1,20 @@
+<h4>Cursos disponibles</h4>
+<ul>
+  <li *ngFor="let curso of cursos">{{curso}}</li>
+</ul>
+<hr>
+<h4>Estudiantes</h4>
+<table class="table table-bordered table-striped tabla">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Sexo</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let estudiante of estudiantes">
+    <td>{{estudiante.id}}</td>
+    <td>{{estudiante.nombre}}</td>
+    <td>{{estudiante.sexo}}</td>
+  </tr>
+</table>

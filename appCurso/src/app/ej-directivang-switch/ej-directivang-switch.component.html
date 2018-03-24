@@ -1,0 +1,8 @@
+<div class="text-center"></div>
+<ol>
+  <li *ngFor="let jugador of jugadores" [ngSwitch]="jugador.equipo">
+    <h5 *ngSwitchCase="'LA Lakers'" class="lakers"><br> {{jugador.nombre}} <br> {{jugador.equipo}}</h5>
+    <h5 *ngSwitchCase="'Chicago Bulls'" class="bulls"><br> {{jugador.nombre}} <br> {{jugador.equipo}}</h5>
+    <h5 *ngSwitchCase="'Boston Celtics'" class="celtics"><br> {{jugador.nombre}} <br> {{jugador.equipo}}</h5>
+  </li>
+</ol>

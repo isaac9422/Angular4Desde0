@@ -1,0 +1,7 @@
+<h4>Componente Padre</h4>
+  <div style="border-style: solid; padding: 10px; border-color: purple">
+    <app-hijo *ngFor = "let value of valores" [valor] ="value"
+    (mensajeMarcado)="mostrarMensaje($event)"></app-hijo>
+    <h5 style="text-align: center">{{texto}}</h5>
+  </div>
+<hr>

@@ -1,0 +1,64 @@
+ol {
+  text-align: center;
+  list-style: none;
+}
+
+.lakers {
+  max-width: 600px;
+  height: 130px;
+  background-image: url("https://lh3.googleusercontent.com/G7xm1N8o52Yd16EVerZyNyQP5OUWnerNtSfagVvk_piaYmH0r695TDHVlAlkaFGGteolDy4hgQ=w128-h128-e365");
+  /*
+  background-image: url("http://clipart.info/images/ccovers/1503438210los-angeles-lakers-football-logo-png.png");
+  background-image: url("../../assets/LALakers.png");
+  */
+  background-position-x: 10px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #552582;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.celtics {
+  max-width: 600px;
+  height: 150px;
+  background-image: url("http://tsnimages.tsn.ca/ImageProvider/TeamLogo?seoId=boston-celtics&width=128&height=128");
+  /*
+  background-image: url("https://upload.wikimedia.org/wikipedia/an/0/04/Boston_Celtics_logo.png");
+  background-image: url("../../assets/LALakers.png");
+  --background-image: url("../../assets/BostonCeltics.png");
+  */
+  background-position-x: 10px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #008348;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bulls {
+  max-width: 600px;
+  height: 150px;
+  /*
+  background-image: url("../../assets/LALakers.png");
+  --background-image: url("../../assets/ChicagoBulls.png");
+  background-image: url("https://vignette.wikia.nocookie.net/baloncesto/images/d/d8/Chicago_Bulls_logo.png/revision/latest?cb=20070406171531");
+  */
+  background-image: url("http://icons.iconarchive.com/icons/astahrr/nba/128/Bulls-icon.png");
+  background-position-x: 10px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #CE1141;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.equipo {
+  color: #707070;
+}

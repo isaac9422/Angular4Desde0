@@ -1,0 +1,14 @@
+<h4>Puntuación</h4>
+<input type="number" class="form-control" [(ngModel)]="puntuacion">
+<hr>
+<!-- Con 0 no entra a esta condición -->
+<div *ngIf="puntuacion; else aviso">
+  <h4 *ngIf="puntuacion > 0 && puntuacion <= 10; else aviso" [ngClass]="{aprobado: puntuacion > 5,
+                  suspendido: puntuacion <= 5}">
+    Puntuación obtenida: {{puntuacion}}</h4>
+
+</div>
+<ng-template #aviso>
+  <h4 *ngIf="puntuacion > 10" class="advertencia">Puntuación mayor que 10</h4>
+  <h4 *ngIf="puntuacion <= 0" class="advertencia">Puntuación menor ó igual que 0</h4>
+</ng-template>

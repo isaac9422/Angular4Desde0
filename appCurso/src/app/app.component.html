@@ -5,39 +5,106 @@
   </h1>
   <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<div class="">
-    <h1> Hola {{destino}}!!</h1>
-    <br>
-    <div class="container" style = "border-style:dotted; border-color: black" >
+<h1> Hola {{destino}}!!</h1>
+<br>
+<div class="container">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" [(ngModel)]="dataBinding">
+    <label appMenuitem class="form-check-label" *ngIf="!dataBinding; else blockDataBinding">Data Binding</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" [(ngModel)]="directiva">
+    <label appMenuitem class="form-check-label" *ngIf="!directiva; else blockDirectiva">Directivas</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" [(ngModel)]="inputOutput">
+    <label appMenuitem class="form-check-label" *ngIf="!inputOutput; else blockInputOutput">Input & Output</label>
+  </div>
+</div>
+
+<ng-template #blockDataBinding>
+  <div class="container" style="border-style: solid; border-color: brown">
+    <h1>Data Binding</h1>
+    <div class="container" style="border-style:dotted; border-color: black">
       <h2>Ejemplo Interpolacion </h2>
-        
+
       <app-ejm-interpolacion></app-ejm-interpolacion>
     </div>
     <br>
-    <div class="container" style = "border-style:dotted; border-color: green" >
+    <div class="container" style="border-style:dotted; border-color: green">
       <h2>Ejemplo Property Binding</h2>
-        
+
       <app-fecha-actual></app-fecha-actual>
     </div>
     <br>
-    <div class="container" style = "border-style:dotted; border-color: red" >
+    <div class="container" style="border-style:dotted; border-color: red">
       <h2>Ejemplo Event Binding</h2>
-        
+
       <app-ejeventbinding></app-ejeventbinding>
     </div>
     <br>
-    <div class="container" style = "border-style:dotted; border-color: blue" >
+    <div class="container" style="border-style:dotted; border-color: blue">
       <h2>Ejemplo 2 Way Binding</h2>
       <app-ej2waybinding></app-ej2waybinding>
     </div>
     <br>
-    <div class="container" style = "border-style:dotted; border-color: magenta" >
-      <h2>Ejemplo Directiva ngIf</h2>
+  </div>
+</ng-template>
+<br>
+
+<ng-template #blockDirectiva>
+
+  <div class="container" style="border-style: solid; border-color: brown">
+    <h1>Directivas</h1>
+    <div class="container" style="border-style:dotted; border-color: magenta">
+      <h2>Ejemplo ngIf</h2>
       <app-ej-directivang-if></app-ej-directivang-if>
     </div>
+    <br>
+    <div class="container" style="border-style: dotted; border-color: forestgreen">
+      <h2>Ejemplo ngStyle</h2>
+      <app-ej-directivang-style></app-ej-directivang-style>
+    </div>
+    <br>
+    <div class="container" style="border-style: dotted; border-color: blue">
+      <h2>Ejemplo ngClass</h2>
+      <app-ej-directivang-class></app-ej-directivang-class>
+    </div>
+    <br>
+    <div class="container" style="border-style: dotted; border-color: black">
+      <h2>Ejemplo ngFor</h2>
+      <app-ej-directivang-for></app-ej-directivang-for>
+    </div>
+    <br>
+    <div class="container" style="border-style: dotted; border-color: red">
+      <h2>Ejemplo ngSwitch</h2>
+      <app-ej-directivang-switch></app-ej-directivang-switch>
+    </div>
+    <br>
+    <div class="container" style="border-style: dotted; border-color: #d36709">
+      <h2>Ejemplo ngPropia</h2>
+      <app-ej-directivang-propia></app-ej-directivang-propia>
+    </div>
+    <br>
+  </div>
+</ng-template>
+<br>
+
+<ng-template #blockInputOutput>
+  <div class="container" style="border-style: dotted; border-color: darkturquoise">
+    <h2>Ejemplo Input & Output</h2>
+    <app-padre></app-padre>
+  </div>
+  <br>
+</ng-template>
+<br>
+
+<div class="container" style="border-style: dotted; border-color: midnightblue">
+  <h2>Pipes</h2>
 </div>
 <br>
-    <app-copyright></app-copyright>
+
+<app-copyright></app-copyright>
 <h2>Here are some links to help you start: </h2>
 <ul>
   <li>
@@ -50,4 +117,3 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
-
