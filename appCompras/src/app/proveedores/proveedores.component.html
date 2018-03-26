@@ -1,0 +1,21 @@
+<h4>Listado de Proveedores</h4>
+<table class="table table-bordered table-striped tabla" style="margin-top: 40px;">
+  <thead>
+    <tr class="filters">
+      <th>Nombre</th>
+      <th>Ciudad</th>
+      <th>Teléfono</th>
+      <th>Fecha Nacimiento</th>
+      <th>Costo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let proveedor of proveedores">
+      <td>{{proveedor.nombre}}</td>
+      <td>{{proveedor.ciudad}}</td>
+      <td>{{proveedor.telefono}}</td>
+      <td>{{proveedor.fechaNacimiento }}</td>
+      <td>{{proveedor.cp | currency}}</td> 
+    </tr>
+  </tbody>
+</table>
