@@ -17,6 +17,10 @@ import { MenuitemDirective } from './menuitem.directive';
 import { EjDirectivangPropiaComponent } from './ej-directivang-propia/ej-directivang-propia.component';
 import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
+import { EjPipeDateComponent } from './ej-pipe-date/ej-pipe-date.component';
+import { EjPipeCaseComponent } from './ej-pipe-case/ej-pipe-case.component';
+import { EjPipeNumberComponent } from './ej-pipe-number/ej-pipe-number.component';
+import { EjPipei18nComponent } from './ej-pipei18n/ej-pipei18n.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { HijoComponent } from './hijo/hijo.component';
     MenuitemDirective,
     EjDirectivangPropiaComponent,
     PadreComponent,
-    HijoComponent
+    HijoComponent,
+    EjPipeDateComponent,
+    EjPipeCaseComponent,
+    EjPipeNumberComponent,
+    EjPipei18nComponent
   ],
   imports: [
     BrowserModule,
